@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://bsob87qeu0jwj"]
+
+[ext_resource type="Script" uid="uid://b30ll7pxmy3ht" path="res://parallax_background.gd" id="1_2pwms"]
+[ext_resource type="Texture2D" uid="uid://jn42tujofqis" path="res://Фон.jpg" id="2_si5dj"]
+
+[node name="ParallaxBackground" type="ParallaxBackground" unique_id=418724392]
+script = ExtResource("1_2pwms")
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="." unique_id=752998510]
+motion_mirroring = Vector2(1150, 0)
+
+[node name="Фон" type="Sprite2D" parent="ParallaxLayer" unique_id=1641368725]
+position = Vector2(576.00006, 323.99994)
+scale = Vector2(1.3829532, 1.3995676)
+texture = ExtResource("2_si5dj")

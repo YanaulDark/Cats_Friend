@@ -1,0 +1,67 @@
+[gd_scene format=3 uid="uid://cbx4bxdhlfio6"]
+
+[ext_resource type="Script" uid="uid://bxm1ovxrcc3v3" path="res://level_menu.gd" id="1_mcy63"]
+[ext_resource type="PackedScene" uid="uid://bsob87qeu0jwj" path="res://parallax_background.tscn" id="1_pssaq"]
+
+[node name="Node2D" type="Node2D" unique_id=1166727250]
+script = ExtResource("1_mcy63")
+
+[node name="ParallaxBackground" parent="." unique_id=418724392 instance=ExtResource("1_pssaq")]
+
+[node name="level1" type="Button" parent="." unique_id=1069553312]
+offset_left = 98.0
+offset_top = 145.0
+offset_right = 239.0
+offset_bottom = 206.0
+text = "1Level"
+
+[node name="level2" type="Button" parent="." unique_id=1643709637]
+offset_left = 367.0
+offset_top = 145.0
+offset_right = 508.0
+offset_bottom = 206.0
+text = "2Level"
+
+[node name="level3" type="Button" parent="." unique_id=1290366121]
+offset_left = 920.0
+offset_top = 145.0
+offset_right = 1061.0
+offset_bottom = 206.0
+text = "4Level"
+
+[node name="level4" type="Button" parent="." unique_id=1096266305]
+offset_left = 644.0
+offset_top = 145.0
+offset_right = 785.0
+offset_bottom = 206.0
+text = "3Level"
+
+[node name="level5" type="Button" parent="." unique_id=454531817]
+offset_left = 98.0
+offset_top = 303.0
+offset_right = 239.0
+offset_bottom = 364.0
+text = "5Level"
+
+[node name="level6" type="Button" parent="." unique_id=1228961141]
+offset_left = 367.0
+offset_top = 303.0
+offset_right = 508.0
+offset_bottom = 364.0
+text = "6Level"
+
+[node name="level7" type="Button" parent="." unique_id=599163956]
+offset_left = 644.0
+offset_top = 303.0
+offset_right = 785.0
+offset_bottom = 364.0
+text = "7Level"
+
+[node name="level8" type="Button" parent="." unique_id=1227092449]
+offset_left = 920.0
+offset_top = 303.0
+offset_right = 1061.0
+offset_bottom = 364.0
+text = "8Level"
+
+[connection signal="pressed" from="level1" to="." method="_on_level_1_pressed"]
